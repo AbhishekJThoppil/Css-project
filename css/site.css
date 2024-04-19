@@ -1,19 +1,21 @@
-/* Reset default styles */
+/* Reset and base styles */
+/* Resetting margins and padding for body, h1, and ul */
 body, h1, ul {
     margin: 0;
     padding: 0;
 }
 
+/* Global body styles */
 body {
     font-family: 'Lora', serif;
     font-size: 16px;
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
-    text-align: center; /* Center aligns the content horizontally */
+    text-align: center;
 }
 
-/* Header */
+/* Header styles */
 header {
     background-color: #333;
     color: #fff;
@@ -22,7 +24,7 @@ header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Navbar */
+/* Navbar styles */
 .navbar {
     display: flex;
     justify-content: center;
@@ -51,7 +53,7 @@ header {
     transform: scale(1.1);
 }
 
-/* Main Content */
+/* Main content styles */
 main {
     padding: 120px 20px 20px 20px;
     display: flex;
@@ -60,7 +62,7 @@ main {
     background: linear-gradient(45deg, #f9f9f9, #e9e9e9);
 }
 
-/* Thumbnails */
+/* Thumbnails styles */
 .thumbnails {
     display: flex;
     flex-wrap: wrap;
@@ -94,7 +96,7 @@ main {
     background-color: rgba(0, 0, 0, 0.05);
 }
 
-/* Login Form */
+/* Form styles */
 form {
     background-color: #fff;
     border-radius: 8px;
@@ -175,7 +177,7 @@ button:hover {
     transform: scale(1.05);
 }
 
-/* Table */
+/* Table styles */
 table {
     width: 100%;
     max-width: 100%;
@@ -225,7 +227,7 @@ tfoot td {
     border-top: 2px solid #ddd;
 }
 
-/* Action Buttons */
+/* Action buttons styles */
 .actions {
     display: flex;
     gap: 5px;
@@ -244,8 +246,9 @@ tfoot td {
     background-color: #555;
 }
 
-/* Media Queries */
+/* Media queries */
 @media (max-width: 768px) {
+    /* Responsive styles for navbar */
     .navbar {
         flex-direction: column;
         align-items: center;
@@ -255,6 +258,7 @@ tfoot td {
         margin: 10px 0;
     }
 
+    /* Responsive styles for thumbnails */
     .thumbnails {
         flex-direction: column;
         align-items: center;
@@ -264,11 +268,13 @@ tfoot td {
         width: 100%;
     }
 
+    /* Responsive styles for form */
     form {
         width: 90%;
         max-width: 100%;
     }
 
+    /* Responsive styles for table */
     table {
         overflow-x: auto;
     }
