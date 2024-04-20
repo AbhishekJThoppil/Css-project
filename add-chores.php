@@ -7,6 +7,7 @@ $title = 'Add Chore';
 include('shared/header.php'); 
 
 ?>
+    <link rel="stylesheet" href="./css/site.css" />
 >
 <!-- Start of HTML body -->
 <h2>Add a New Chore</h2>
